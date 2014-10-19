@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intcanopy</object-name>
+    <object-name>planchet</object-name>
+    <object-name>intspoilerG</object-name>
+    <object-name>intspoilerD</object-name>
+    <object-name>intporteA</object-name>
+    <object-name>intporteG1</object-name>
+    <object-name>intporteG2</object-name>
+    <object-name>intporteD1</object-name>
+    <object-name>intporteD2</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Dassault-Mystere-IV/Models/Effects/Glass/glass</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>intverriere</object-name>
+  </effect>
+  
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/Dassault-Mystere-IV/Models/Interior/seat/seat.xml</path>
+    <offsets>
+      <x-m> -3.73000 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.09907 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Dassault-Mystere-IV/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.70 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -0.08 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Dassault-Mystere-IV/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -4.48167 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.14882 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Coté gauche -->
+  <model>
+    <path>Aircraft/Dassault-Mystere-IV/Models/Interior/Panel/Left-Panel/left.xml</path>
+    <offsets>
+      <x-m> -4.12433 </x-m>
+      <y-m> -0.33054 </y-m>
+      <z-m> -0.08148 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Coté droit -->
+  <model>
+    <path>Aircraft/Dassault-Mystere-IV/Models/Interior/Panel/Right-Panel/right.xml</path>
+    <offsets>
+      <x-m> -4.12433 </x-m>
+      <y-m>  0.33054 </y-m>
+      <z-m> -0.08148 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Aerofreins -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intspoilerG</object-name>
+    <property>surface-positions/spoiler-pos-norm</property>
+    <factor> -70 </factor>
+    <axis>
+      <x1-m>  2.14398 </x1-m>
+      <y1-m> -0.50075 </y1-m>
+      <z1-m> -1.01264 </z1-m>
+      <x2-m>  2.13976 </x2-m>
+      <y2-m> -0.66090 </y2-m>
+      <z2-m> -0.75324 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intspoilerD</object-name>
+    <property>surface-positions/spoiler-pos-norm</property>
+    <factor> -70 </factor>
+    <axis>
+      <x1-m>  2.13976 </x1-m>
+      <y1-m>  0.66090 </y1-m>
+      <z1-m> -0.75324 </z1-m>
+      <x2-m>  2.14398 </x2-m>
+      <y2-m>  0.50075 </y2-m>
+      <z2-m> -1.01264 </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Fermeture des portes des trains -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteA</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 95 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 95 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -5.64767 </x1-m>
+      <y1-m>  0.14753 </y1-m>
+      <z1-m> -0.98023 </z1-m>
+      <x2-m> -4.71040 </x2-m>
+      <y2-m>  0.14753 </y2-m>
+      <z2-m> -1.08495 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteG1</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -115 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  0.23591 </x1-m>
+      <y1-m> -1.50435 </y1-m>
+      <z1-m> -0.88532 </z1-m>
+      <x2-m>  0.49025 </x2-m>
+      <y2-m> -1.50435 </y2-m>
+      <z2-m> -0.87049 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteG2</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 90 </dep></entry>
+      <entry><ind> 0.8 </ind><dep> 90 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -0.46476 </x1-m>
+      <y1-m> -0.09422 </y1-m>
+      <z1-m> -1.29588 </z1-m>
+      <x2-m>  0.28126 </x2-m>
+      <y2-m> -0.09422 </y2-m>
+      <z2-m> -1.29025 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteD1</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -115 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  0.49025 </x1-m>
+      <y1-m>  1.50435 </y1-m>
+      <z1-m> -0.87049 </z1-m>
+      <x2-m>  0.23591 </x2-m>
+      <y2-m>  1.50435 </y2-m>
+      <z2-m> -0.88532 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteD2</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 90 </dep></entry>
+      <entry><ind> 0.8 </ind><dep> 90 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  0.28126 </x1-m>
+      <y1-m>  0.09422 </y1-m>
+      <z1-m> -1.29025 </z1-m>
+      <x2-m> -0.46476 </x2-m>
+      <y2-m>  0.09422 </y2-m>
+      <z2-m> -1.29588 </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Canopy -->
+  <animation>
+    <name>IntCanopy</name>
+    <object-name>intcanopy</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntCanopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopy</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> 0.02 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.06 </dep></entry>
+    </interpolation>
+    <factor> 0.02 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopy</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.7 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
