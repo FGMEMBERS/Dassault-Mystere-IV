@@ -4,7 +4,11 @@
 
   <sim>
 
+<<<<<<< HEAD
     <description>Dassault Myst&#xE8;re IV (YASim)</description>
+=======
+    <description>Dassault Mystère IV (YASim)</description>
+>>>>>>> 9f7f04c... New airplane : Dassault MD-454 Mystere IV
     <author>Emmanuel BARANGER (3D/FDM)</author>
     <status>alpha</status>
     
