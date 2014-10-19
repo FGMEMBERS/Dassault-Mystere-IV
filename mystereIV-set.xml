@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList include="mystereIV-base.xml">
+
+  <sim>
+
+    <description>Dassault Mystère IV (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <status>alpha</status>
+    
+    <flight-model>yasim</flight-model>
+    <aero>mystereIV-yasim</aero>
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
