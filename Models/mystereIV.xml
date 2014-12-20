@@ -665,7 +665,7 @@
     </condition>
   </animation>
   
-  <!-- Compression -->>>
+  <!-- Compression -->
   <animation>
     <name>CompressionAvant</name>
     <object-name>axeAB</object-name>
