@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">Default Low - FAF ADA Patrouille de France</name>
-        <texture>texture.png</texture>
+        <name type="string">Default High - FAF ADA Patrouille de France</name>
+        <texture>Liveries/2048x2048/FAFPatrouille.png</texture>
         <specular>
           <red>   0.05 </red>
           <green> 0.05 </green>

@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">Default Low - FAF ADA Patrouille de France</name>
-        <texture>texture.png</texture>
+        <name type="string">FAF EC 1/2 - Cigognes</name>
+        <texture>Liveries/2048x2048/FAF_EC1-2_Cigognes.png</texture>
         <specular>
           <red>   0.05 </red>
           <green> 0.05 </green>
