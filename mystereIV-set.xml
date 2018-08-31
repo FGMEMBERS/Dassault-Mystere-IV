@@ -18,6 +18,18 @@
       <model type="int">   4 </model>
     </rating>
 
+    <tags>
+      <tag>1950s</tag>
+      <tag>1960s</tag>
+      <tag>1970s</tag>
+      <tag>1980s</tag>
+      <tag>dassault</tag>
+      <tag>fighter</tag>
+      <tag>retractable-gear</tag>
+      <tag>jet</tag>
+      <tag>single-engine</tag>
+    </tags>
+
   </sim>
 
 </PropertyList>
